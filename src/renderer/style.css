@@ -1,0 +1,105 @@
+:root {
+  --primary: #6366f1;
+  --bg: #0f172a;
+  --card: rgba(30, 41, 59, 0.7);
+  --text: #f8fafc;
+}
+
+body {
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%);
+  color: var(--text);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+}
+
+.container {
+  background: var(--card);
+  backdrop-filter: blur(12px);
+  padding: 2rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  width: 350px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+.group {
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 1.5rem;
+}
+
+label {
+  display: block;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  opacity: 0.7;
+  margin-bottom: 0.6rem;
+  letter-spacing: 0.5px;
+}
+
+.row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+input {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 0.8rem;
+  border-radius: 0.6rem;
+  color: white;
+  width: 100%;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+input:focus {
+  border-color: var(--primary);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+button {
+  width: 100%;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 0.6rem;
+  background: var(--primary);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.1s, opacity 0.2s;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+.result-container {
+  margin-top: 12px;
+  min-height: 20px;
+}
+
+.result-label {
+  color: var(--primary);
+  font-weight: 600;
+  font-size: 1.1rem;
+  text-align: center;
+  display: block;
+}

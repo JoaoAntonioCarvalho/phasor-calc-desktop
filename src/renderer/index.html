@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Phasor Converter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <h2>Phasor Converter</h2>
+
+    <div class="group">
+      <label>Rectangular Form (R + jX)</label>
+      <div class="row">
+        <input type="number" id="real" placeholder="Real (R)">
+        <input type="number" id="imag" placeholder="Imaginary (X)">
+      </div>
+      <button onclick="toPolar()">Convert to Polar</button>
+      <div class="result-container">
+        <span id="resPolar" class="result-label"></span>
+      </div>
+    </div>
+
+    <div class="group" style="border:none; margin-bottom: 0; padding-bottom: 0;">
+      <label>Polar Form (M ∠ θ°)</label>
+      <div class="row">
+        <input type="number" id="mag" placeholder="Magnitude (M)">
+        <input type="number" id="ang" placeholder="Angle (θ°)">
+      </div>
+      <button onclick="toRect()">Convert to Rectangular</button>
+      <div class="result-container">
+        <span id="resRect" class="result-label"></span>
+      </div>
+    </div>
+  </div>
+  <script src="ui.js"></script>
+</body>
+
+</html>
